@@ -71,7 +71,27 @@ const styles = StyleSheet.create({
     color: '#0066FF',
     fontSize: 16,
     fontWeight: 'bold',
-  }
+  },
+  subtitle: {
+    color: 'white',
+    fontSize: 22,
+    fontWeight: 'bold',
+    marginBottom: 18,
+    marginLeft: 6,
+  },
+  registerButton: {
+    backgroundColor: 'white',
+    paddingVertical: 15,
+    borderRadius: 30,
+    alignItems: 'center',
+    marginTop: 10,
+    marginBottom: 15,
+  },
+  registerButtonText: {
+    color: '#0066FF',
+    fontSize: 16,
+    fontWeight: 'bold',
+  },
 });
 
 export default styles;

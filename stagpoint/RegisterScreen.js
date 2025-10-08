@@ -10,12 +10,15 @@ import {
 import styles from './styles';
 import { Ionicons } from '@expo/vector-icons';
 
-const LoginScreen = ({ navigation }) => {
+const RegisterScreen = ({ navigation }) => {
+  const [username, setUsername] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [secureText, setSecureText] = useState(true);
 
-  const handleLogin = () => {
+  const handleRegister = () => {
+    // Adicione lógica para cadastro aqui
+    console.log('Username:', username);
     console.log('Email:', email);
     console.log('Password:', password);
   };
@@ -30,24 +33,38 @@ const LoginScreen = ({ navigation }) => {
       />
 
       <View style={styles.formContainer}>
+        <Text style={styles.subtitle}>Cadastro</Text>
+
+        <View style={styles.inputGroup}>
+          <Text style={styles.label}>USUÁRIO</Text>
+          <TextInput
+            style={styles.input}
+            placeholder="Deyverson José"
+            placeholderTextColor="#666"
+            value={username}
+            onChangeText={setUsername}
+            autoCapitalize="words"
+          />
+        </View>
         <View style={styles.inputGroup}>
           <Text style={styles.label}>EMAIL</Text>
           <TextInput
             style={styles.input}
             placeholder="deyverson@email.com"
+            placeholderTextColor="#666"
             value={email}
             onChangeText={setEmail}
             keyboardType="email-address"
             autoCapitalize="none"
           />
         </View>
-
         <View style={styles.inputGroup}>
           <Text style={styles.label}>SENHA</Text>
           <View style={styles.passwordContainer}>
             <TextInput
               style={styles.passwordInput}
               placeholder="•••••"
+              placeholderTextColor="#666"
               value={password}
               onChangeText={setPassword}
               secureTextEntry={secureText}
@@ -61,22 +78,12 @@ const LoginScreen = ({ navigation }) => {
             </TouchableOpacity>
           </View>
         </View>
-
-        <TouchableOpacity style={styles.forgotPassword}>
-          <Text style={styles.forgotPasswordText}>Esqueceu a senha?</Text>
+        <TouchableOpacity style={styles.registerButton} onPress={handleRegister}>
+          <Text style={styles.registerButtonText}>Cadastrar</Text>
         </TouchableOpacity>
-
-        <TouchableOpacity style={styles.loginButton} onPress={handleLogin}>
-          <Text style={styles.loginButtonText}>Login</Text>
-        </TouchableOpacity>
-
-        <TouchableOpacity style={{ alignSelf: 'center' }} onPress={() => navigation.navigate('Register')}>
-        <Text style={{ color: 'white', fontSize: 16 }}>Não tem conta? Cadastre-se</Text>
-        </TouchableOpacity>
-
       </View>
     </SafeAreaView>
   );
 };
 
-export default LoginScreen;
+export default RegisterScreen;
