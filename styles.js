@@ -222,6 +222,94 @@ const styles = StyleSheet.create({
     marginTop: 3,
   },
 
+ // Tela Registro Ponto
+
+clockCard: {
+  backgroundColor: "#0066FF",
+  borderRadius: 20,
+  padding: 20,
+  flexDirection: "row",
+  justifyContent: "space-between",
+  alignItems: "center",
+  marginBottom: 25,
+},
+clockLabel: {
+  color: "white",
+  fontSize: 16,
+},
+clockTime: {
+  color: "white",
+  fontSize: 24,
+  fontWeight: "bold",
+  marginTop: 5,
+},
+
+switchContainer: {
+  flexDirection: "row",
+  justifyContent: "space-between",
+  alignItems: "center",
+  marginBottom: 25,
+},
+switchButton: {
+  flex: 1,
+  borderRadius: 30,
+  paddingVertical: 12,
+  alignItems: "center",
+  marginHorizontal: 5,
+},
+switchInactiveGray: {
+  backgroundColor: "#e0e0e0",
+},
+switchActiveBlue: {
+  backgroundColor: "#0066FF",
+},
+switchActiveGray: {
+  backgroundColor: "#bfbfbf",
+},
+switchText: {
+  fontSize: 16,
+  fontWeight: "bold",
+},
+switchTextInactiveGray: {
+  color: "#999",
+},
+switchTextActiveBlue: {
+  color: "#fff",
+},
+switchTextActiveGray: {
+  color: "#fff",
+},
+
+observationContainer: {
+  marginBottom: 25,
+},
+observationLabel: {
+  fontWeight: "bold",
+  color: "#000",
+  marginBottom: 8,
+},
+observationInput: {
+  backgroundColor: "#f0f0f0",
+  borderRadius: 15,
+  padding: 15,
+  textAlignVertical: "top",
+  minHeight: 100,
+  fontSize: 14,
+},
+
+registerButtonPonto: {
+  backgroundColor: "#0066FF",
+  borderRadius: 30,
+  paddingVertical: 14,
+  alignItems: "center",
+  marginBottom: 80,
+},
+registerButtonTextPonto: {
+  color: "#fff",
+  fontSize: 16,
+  fontWeight: "bold",
+},
+
 });
 
 export default styles;
