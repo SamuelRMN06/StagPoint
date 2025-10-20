@@ -15,11 +15,10 @@ const LoginScreen = ({ navigation }) => {
   const [password, setPassword] = useState('');
   const [secureText, setSecureText] = useState(true);
 
-  // Esta função provavelmente também foi alterada por seu colega para navegar para a Home
   const handleLogin = () => {
     console.log('Email:', email);
     console.log('Password:', password);
-    navigation.replace('Home'); // Navega para a tela Home
+    navigation.replace('Home'); 
   };
 
   return (
@@ -64,7 +63,6 @@ const LoginScreen = ({ navigation }) => {
           </View>
         </View>
 
-        {/* --- CONFLITO 1 RESOLVIDO --- */}
         <TouchableOpacity 
           style={styles.forgotPassword} 
           onPress={() => navigation.navigate('ForgotPassword')}
@@ -76,7 +74,6 @@ const LoginScreen = ({ navigation }) => {
           <Text style={styles.loginButtonText}>Login</Text>
         </TouchableOpacity>
 
-        {/* --- CONFLITO 2 RESOLVIDO --- */}
         <TouchableOpacity
           style={styles.registerButton}
           onPress={() => navigation.navigate('Register')}
