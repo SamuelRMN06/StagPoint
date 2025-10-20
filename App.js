@@ -8,6 +8,7 @@ import RegisterScreen from './RegisterScreen'; // Supondo que o arquivo se chame
 import ForgotPasswordScreen from './ForgotPasswordScreen';
 import HomeScreen from './HomeScreen';
 import PontoScreen from './PontoScreen';
+import HistoricoScreen from './HistoricoScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -21,6 +22,7 @@ export default function App() {
         <Stack.Screen name="ForgotPassword" component={ForgotPasswordScreen} />
         <Stack.Screen name="Home" component={HomeScreen} />
         <Stack.Screen name="Ponto" component={PontoScreen} />
+        <Stack.Screen name="Historico" component={HistoricoScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
