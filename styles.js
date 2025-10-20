@@ -1,6 +1,7 @@
 import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
+  // ESTILOS GERAIS (LOGIN, REGISTRO)
   container: {
     flex: 1,
     backgroundColor: '#0066FF',
@@ -84,6 +85,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
 
+  // SEUS ESTILOS PARA RECUPERAR SENHA
   recoverTitle: {
     color: "white",
     fontSize: 20,
@@ -103,13 +105,15 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: "bold",
   },
+
+  // ESTILOS DOS SEUS COLEGAS (HOME, PONTO, ETC.)
   // HOME
   containerHome: {
     flex: 1,
     backgroundColor: "#fff",
-    paddingHorizontal: 25, 
+    paddingHorizontal: 25,
     paddingTop: 50,
-    paddingBottom: 90, 
+    paddingBottom: 90,
   },
   titleHome: {
     fontSize: 30,
@@ -125,7 +129,7 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
-    marginBottom: 40, 
+    marginBottom: 40,
     elevation: 3,
     shadowColor: "#000",
     shadowOpacity: 0.1,
@@ -150,7 +154,7 @@ const styles = StyleSheet.create({
   hoursText: {
     fontSize: 28,
     fontWeight: "bold",
-    marginBottom: 40, 
+    marginBottom: 40,
     textAlign: "center",
     color: "#333",
   },
@@ -164,7 +168,7 @@ const styles = StyleSheet.create({
     borderRadius: 20,
     paddingVertical: 25,
     paddingHorizontal: 15,
-    marginHorizontal: 10, 
+    marginHorizontal: 10,
     justifyContent: "center",
     alignItems: "center",
     elevation: 3,
@@ -190,8 +194,8 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "center",
-    marginTop: "auto", 
-    marginBottom: 100, 
+    marginTop: "auto",
+    marginBottom: 100,
   },
   reminderText: {
     color: "#0066FF",
@@ -221,95 +225,89 @@ const styles = StyleSheet.create({
     color: "#666",
     marginTop: 3,
   },
-
- // Tela Registro Ponto
-
-clockCard: {
-  backgroundColor: "#0066FF",
-  borderRadius: 20,
-  padding: 20,
-  flexDirection: "row",
-  justifyContent: "space-between",
-  alignItems: "center",
-  marginBottom: 25,
-},
-clockLabel: {
-  color: "white",
-  fontSize: 16,
-},
-clockTime: {
-  color: "white",
-  fontSize: 24,
-  fontWeight: "bold",
-  marginTop: 5,
-},
-
-switchContainer: {
-  flexDirection: "row",
-  justifyContent: "space-between",
-  alignItems: "center",
-  marginBottom: 25,
-},
-switchButton: {
-  flex: 1,
-  borderRadius: 30,
-  paddingVertical: 12,
-  alignItems: "center",
-  marginHorizontal: 5,
-},
-switchInactiveGray: {
-  backgroundColor: "#e0e0e0",
-},
-switchActiveBlue: {
-  backgroundColor: "#0066FF",
-},
-switchActiveGray: {
-  backgroundColor: "#bfbfbf",
-},
-switchText: {
-  fontSize: 16,
-  fontWeight: "bold",
-},
-switchTextInactiveGray: {
-  color: "#999",
-},
-switchTextActiveBlue: {
-  color: "#fff",
-},
-switchTextActiveGray: {
-  color: "#fff",
-},
-
-observationContainer: {
-  marginBottom: 25,
-},
-observationLabel: {
-  fontWeight: "bold",
-  color: "#000",
-  marginBottom: 8,
-},
-observationInput: {
-  backgroundColor: "#f0f0f0",
-  borderRadius: 15,
-  padding: 15,
-  textAlignVertical: "top",
-  minHeight: 100,
-  fontSize: 14,
-},
-
-registerButtonPonto: {
-  backgroundColor: "#0066FF",
-  borderRadius: 30,
-  paddingVertical: 14,
-  alignItems: "center",
-  marginBottom: 80,
-},
-registerButtonTextPonto: {
-  color: "#fff",
-  fontSize: 16,
-  fontWeight: "bold",
-},
-
+  // Tela Registro Ponto
+  clockCard: {
+    backgroundColor: "#0066FF",
+    borderRadius: 20,
+    padding: 20,
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+    marginBottom: 25,
+  },
+  clockLabel: {
+    color: "white",
+    fontSize: 16,
+  },
+  clockTime: {
+    color: "white",
+    fontSize: 24,
+    fontWeight: "bold",
+    marginTop: 5,
+  },
+  switchContainer: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+    marginBottom: 25,
+  },
+  switchButton: {
+    flex: 1,
+    borderRadius: 30,
+    paddingVertical: 12,
+    alignItems: "center",
+    marginHorizontal: 5,
+  },
+  switchInactiveGray: {
+    backgroundColor: "#e0e0e0",
+  },
+  switchActiveBlue: {
+    backgroundColor: "#0066FF",
+  },
+  switchActiveGray: {
+    backgroundColor: "#bfbfbf",
+  },
+  switchText: {
+    fontSize: 16,
+    fontWeight: "bold",
+  },
+  switchTextInactiveGray: {
+    color: "#999",
+  },
+  switchTextActiveBlue: {
+    color: "#fff",
+  },
+  switchTextActiveGray: {
+    color: "#fff",
+  },
+  observationContainer: {
+    marginBottom: 25,
+  },
+  observationLabel: {
+    fontWeight: "bold",
+    color: "#000",
+    marginBottom: 8,
+  },
+  observationInput: {
+    backgroundColor: "#f0f0f0",
+    borderRadius: 15,
+    padding: 15,
+    textAlignVertical: "top",
+    minHeight: 100,
+    fontSize: 14,
+  },
+  registerButtonPonto: {
+    backgroundColor: "#0066FF",
+    borderRadius: 30,
+    paddingVertical: 14,
+    alignItems: "center",
+    marginBottom: 80,
+  },
+  registerButtonTextPonto: {
+    color: "#fff",
+    fontSize: 16,
+    fontWeight: "bold",
+  },
 });
 
 export default styles;
