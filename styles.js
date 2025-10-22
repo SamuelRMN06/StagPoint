@@ -1,7 +1,7 @@
 import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
-  // ESTILOS GERAIS (LOGIN, REGISTRO)
+  // tela login e registro
   container: {
     flex: 1,
     backgroundColor: '#0066FF',
@@ -85,7 +85,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
 
-  // SEUS ESTILOS PARA RECUPERAR SENHA
+  // tela recuperar senha
   recoverTitle: {
     color: "white",
     fontSize: 20,
@@ -106,8 +106,7 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
   },
 
-  // ESTILOS DOS SEUS COLEGAS (HOME, PONTO, ETC.)
-  // HOME
+  // tela home
   containerHome: {
     flex: 1,
     backgroundColor: "#fff",
@@ -225,7 +224,7 @@ const styles = StyleSheet.create({
     color: "#666",
     marginTop: 3,
   },
-  // Tela Registro Ponto
+  // tela registro ponto
   clockCard: {
     backgroundColor: "#0066FF",
     borderRadius: 20,
@@ -309,99 +308,99 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
   },
 
-  // HISTÓRICO
-headerHistory: {
-  marginBottom: 20,
-},
-historyHeaderRow: {
-  flexDirection: "row",
-  justifyContent: "space-between",
-  alignItems: "center",
-  marginTop: 10,
-  marginBottom: 10,
-},
-historyList: {
-  marginBottom: 100,
-},
-historyCard: {
-  borderRadius: 15,
-  padding: 15,
-  marginBottom: 15,
-  position: "relative",
-},
-historyDate: {
-  color: "white",
-  fontSize: 14,
-  marginBottom: 5,
-},
-historyHours: {
-  color: "white",
-  fontSize: 16,
-},
-historyTime: {
-  color: "white",
-  fontWeight: "bold",
-  fontSize: 22,
-  marginTop: 5,
-},
-historyIcon: {
-  position: "absolute",
-  right: 15,
-  top: 15,
-},
-// MODAL
-modalOverlay: {
-  flex: 1,
-  justifyContent: "center",
-  alignItems: "center",
-  backgroundColor: "rgba(0,0,0,0.5)",
-},
-modalContainer: {
-  backgroundColor: "#fff",
-  borderRadius: 15,
-  padding: 20,
-  width: "80%",
-  alignItems: "center",
-},
-modalTitle: {
-  fontSize: 18,
-  fontWeight: "bold",
-  marginBottom: 15,
-  color: "#000",
-},
-modalField: {
-  width: "100%",
-  marginBottom: 10,
-},
-modalLabel: {
-  fontSize: 14,
-  fontWeight: "bold",
-  marginBottom: 5,
-},
-modalInputContainer: {
-  flexDirection: "row",
-  alignItems: "center",
-  backgroundColor: "#f2f2f2",
-  borderRadius: 10,
-  paddingHorizontal: 10,
-  height: 40,
-},
-modalInput: {
-  flex: 1,
-  marginLeft: 8,
-  color: "#000",
-},
-modalButton: {
-  backgroundColor: "#0066FF",
-  borderRadius: 10,
-  paddingVertical: 10,
-  paddingHorizontal: 20,
-  marginTop: 10,
-},
-modalButtonText: {
-  color: "white",
-  fontWeight: "bold",
-  fontSize: 16,
+  // tela de historico
+  headerHistory: {
+    marginBottom: 20,
+  },
+  historyHeaderRow: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+    marginTop: 10,
+    marginBottom: 10,
+  },
+  historyList: {
+    marginBottom: 100,
+  },
+  historyCard: {
+    borderRadius: 15,
+    padding: 15,
+    marginBottom: 15,
+    position: "relative",
+  },
+  historyDate: {
+    color: "white",
+    fontSize: 14,
+    marginBottom: 5,
+  },
+  historyHours: {
+    color: "white",
+    fontSize: 16,
+  },
+  historyTime: {
+    color: "white",
+    fontWeight: "bold",
+    fontSize: 22,
+    marginTop: 5,
+  },
+  historyIcon: {
+    position: "absolute",
+    right: 15,
+    top: 15,
+  },
+  // tela de filtro
+  modalOverlay: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: "rgba(0,0,0,0.5)",
+  },
+  modalContainer: {
+    backgroundColor: "#fff",
+    borderRadius: 15,
+    padding: 20,
+    width: "80%",
+    alignItems: "center",
+  },
+  modalTitle: {
+    fontSize: 18,
+    fontWeight: "bold",
+    marginBottom: 15,
+    color: "#000",
+  },
+  modalField: {
+    width: "100%",
+    marginBottom: 10,
+  },
+  modalLabel: {
+    fontSize: 14,
+    fontWeight: "bold",
+    marginBottom: 5,
+  },
+  modalInputContainer: {
+    flexDirection: "row",
+    alignItems: "center",
+    backgroundColor: "#f2f2f2",
+    borderRadius: 10,
+    paddingHorizontal: 10,
+    height: 40,
+  },
+  modalInput: {
+    flex: 1,
+    marginLeft: 8,
+    color: "#000",
+  },
+  modalButton: {
+    backgroundColor: "#0066FF",
+    borderRadius: 10,
+    paddingVertical: 10,
+    paddingHorizontal: 20,
+    marginTop: 10,
+  },
+  modalButtonText: {
+    color: "white",
+    fontWeight: "bold",
+    fontSize: 16,
 },
 });
 
